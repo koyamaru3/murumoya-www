@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>投票結果のテスト</title>
+<link rel="icon" type="image/GIF" href="/favicon.ico"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<meta http-equiv="Pragma" content="no-cache">
+
+<link href="./voteresult.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" src="/import/lib/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="/import/lib/moment.min.js"></script>
+<script type="text/javascript" src="/import/lib/spin.min.js"></script>
+<script type="text/javascript" src="./voteresult.js"></script>
+<script type="text/javascript">
+$(function() {
+    initVoteResult();
+});
+</script>
+</head>
+
+<body style="background-color:#f7ffad">
+<div id="voteResult">
+<div id="voteResultHeader"></div>    
+<div id="voteResultBody"></div>    
+<div id="voteResultFooter">
+    <p><a href="#">もっと見る</a></p></div>    
+</div>
+
+</body>
+</html>

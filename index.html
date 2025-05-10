@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+<meta http-equiv="content-type" content="text/html;charset=UTF-8">
+<meta name="robots" content="index,follow">
+<meta name="keywords" content="ミルモ, ミルモでポン, ミルポン, ムルモ, ムルモ屋, ムルモ屋本舗">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<meta name="theme-color" content="#A38A46">
+<title>ムルモ屋本舗</title>
+<!--<script src="etc/uranai/uranai.js" type="text/javascript"></script>-->
+<link rel="SHORTCUT ICON" href="/murumo.ico">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png" />
+<link href="import/toppage_2023.css" rel="stylesheet" type="text/css">
+
+<link href="/scripts/update/update.css" rel="stylesheet" type="text/css">
+<link href="/scripts/vote/vote.css" rel="stylesheet" type="text/css">
+<link href="/scripts/picture/picture.css" rel="stylesheet" type="text/css">
+<link href="/scripts/vote/voteresult.css" rel="stylesheet" type="text/css">
+<link href="/scripts/article/article.css" rel="stylesheet" type="text/css">
+<link href="/scripts/kinenbi/kinenbi.css" rel="stylesheet" type="text/css">
+<link href="/scripts/news/news.css" rel="stylesheet" type="text/css">
+<link href="/murutweet/murutweet.css" rel="stylesheet" type="text/css">
+
+
+<!-- しめくくりチャットが終わったら削除する -->
+<style type="text/css">
+<!--
+.picture {
+    display: block;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.picture img {
+    width: 100%;
+}
+-->
+</style>
+
+<script type="text/javascript" src="/import/lib/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="/import/lib/moment.min.js"></script>
+<script type="text/javascript" src="/import/lib/isotope.pkgd.min.js"></script>
+<script type="text/javascript" src="/import/lib/imagesloaded.pkgd.min.js"></script>
+<script type="text/javascript" src="/import/lib/spin.min.js"></script>
+<script type="text/javascript" src="/scripts/update/update-firebase.js"></script>
+<!--<script type="text/javascript" src="/scripts/vote/vote-firebase.js"></script>-->
+<script type="text/javascript" src="/scripts/picture/picture-firebase.js"></script>
+<script type="text/javascript" src="/scripts/vote/voteresult-firebase.js"></script>
+<script type="text/javascript" src="/scripts/article/article-firebase.js"></script>
+<script type="text/javascript" src="/scripts/kinenbi/kinenbi-firebase.js"></script>
+<script type="text/javascript" src="/scripts/news/news.js?ver=20240420"></script>
+<script type="text/javascript" src="/murutweet/murutweet.js"></script>
+<!--<script type="text/javascript" src="/murutweet/murutweet_20200225.js?p=(new Date()).getTime()"></script>-->
+<script type="text/javascript">
+$(function() {
+    $('#container').isotope({
+        itemSelector: '.item',
+        isFitWidth: true,
+        masonry: {
+            columnWidth: 320
+        }
+    });
+
+    initUpdate();
+//    initVote(27);
+    initPicture();
+    initArticle();
+    initVoteResult();
+    initKinenbi();
+    initNews();
+    initMuruTweet();
+
+    $('#novel').append('<a href="/novel/top.html" title="みんなの小説"><img src="images/m_novel.png"></a>');
+    $('#sozai').append('<a href="/etc/sozai2.html" title="素材"><img src="images/m_sozai.png"></a>');
+    $('#profile_diary').append('<div class="item2"><a href="/etc/profile2.html" title="プロフィール"><img src="/images/m_profile4.png"></a></div><div class="item2"><a href="/nicky/nicky.html" title="日記"><img src="/images/m_diary4.png"></a></div>');
+    $('#kikaku_murumuru').append('<div class="item2"><a href="/etc/kikaku.html" title="企画"><img src="/images/m_kikaku.png"></a></div><div class="item2"><a href="/etc/murumuru.html" title="ムルムル"><img src="/images/m_murumuru.png"></a></div>');
+    $('#bbs').append('<div class="bbs_novel"><a href="/UPP/index.html" title="掲示板"><img src="images/m_bbs5.png"></a></div>');
+    $('#novel_bbs').append('<div class="bbs_novel"><a href="/UPPnovel/upb.cgi" title="小説板"><img src="images/m_novel2.png"></a></div>');
+    $('#comic').append('<a href="/picture/azuki_comic.html" title="おどろきアズキ"><img src="/images/m_comic03.png"></a>');
+
+    var flag = "up";
+    $(window).on("scroll", function () {
+        if ($(this).scrollTop() > 0) {
+            if (flag === "up") {
+                $(".navi").stop().animate({
+                    top: 0
+                }, 500)
+                flag = "down";
+            }
+        } else {
+            if (flag === "down") {
+                $(".navi").stop().animate({
+                    top: "-48px"
+                }, 500);
+                flag = "up";
+            }
+        }
+    });
+});
+
+$(window).load(() => {
+//    $('#container').imagesLoaded().progress(() => {
+    $('#container').imagesLoaded(() => {
+        $('#container').isotope('layout');
+    });
+    setInterval(() => {
+        $('#container').isotope('layout');
+    }, 1000);
+});
+
+</script>
+</head>
+
+<body>
+<div id="wrapper">
+
+<div class="navi">
+<div class="naviItems">
+<div class="naviHead"><img src="images/contents2015/toTop.png"></div>
+<a class="naviItem" href="/UPP/index.html"><img src="images/navi/navi_bbs.png"></a>
+<a class="naviItem" href="/UPPnovel/upb.cgi"><img src="images/navi/navi_novel.png"></a>
+<a class="naviItem" href="/nicky/nicky.html"><img src="images/navi/navi_diary.png"></a>
+</div><!-- naviItems -->
+</div><!-- navi -->
+
+<div id="header">
+<div id="headerPicture"><img style="border-bottom-left-radius: 16px; border-bottom-right-radius: 16px;" src="images/m_top_murumo97L.png" title="パピィ「20周年はあたちのおかげ！感謝しなちゃい！」"></div>
+</div><!-- header -->
+
+<br>
+<div id="notice"> 「わがまま☆フェアリー ミルモでポン！」ファンサイト『ムルモ屋本舗』へようこそ！<br>
+みんなでミルモでポン！を応援しましょう！(^^) </div>
+<br>
+<!--<div class="infobox"><strong>🎍あけましておめでとうございます！🎍<br>
+    今年もムルモ屋本舗をどうぞよろしくお願いいたします！</strong></div>
+<br>-->
+<!-- コンテンツ -->
+<div id="container">
+    <div class="item" id="update"></div>
+
+<!--    <div class="item" id="shinnen">
+      <p style="display: block;max-width: 300px; margin: 0 auto;text-align: center;">
+      <img style="width: 100%;" src="images/m_new_murumo01.png"></p>
+    </div>-->
+    <div class="item" id="muruTweet"></div>
+    <div class="item" id="comic"></div>
+
+<!--	<div class="item" id="vote"></div>-->
+    <div class="item" id="sozai"></div>
+    <div class="item" id="novel"></div>
+    <div class="item" id="picture"></div>
+    <div class="item" id="news"></div>
+    <div class="item" id="article"></div>
+    <div class="item" id="voteResult"></div>
+    <div class="item" id="kikaku_murumuru"></div>
+    <div class="item" id="kinenbi"></div>
+    <div class="item" id="bbs"></div>
+    <div class="item" id="novel_bbs"></div>
+    <div class="item" id="profile_diary"></div>
+</div><!-- container -->
+<br>
+<a href="link.html">リンク（更新予定）</a>
+<br>
+
+<!-- カウンター -->
+<div id="counterbox">
+<!-- ここからカウンター設置 -->
+<script type="text/javascript">
+document.write('<img src="/analyze/analyze.cgi?' + screen.width + 'x' + screen.height + '&amp;' + screen.colorDepth + '&amp;' + document.referrer + '" alt="" width="1" height="1" />');
+</script>
+<noscript>
+<img src="/analyze/analyze.cgi" alt="" width="1" height="1" />
+</noscript>
+<script type="text/javascript" src="/analyze/count.js"></script>
+<!-- ここまでカウンター設置 -->
+</div><!-- counterbox -->
+
+
+<!-- ★★★フッタ★★★ -->
+<div id="footer">
+<p>「ムルモ屋本舗」はリンクフリーです。 <br>
+<img src="/banner.gif" alt="" width="200" height="40" border="0"><br>
+&lt;img src=&quot;https://www.murumoya.com/banner.gif&quot;&gt;
+</p>
+<ul>
+<li>○このサイトは原作者、出版社およびアニメ制作会社との関連はございません。</li>
+<li>○このサイトに掲載の画像、文書の無断転載を禁止します。</li>
+<li>○Microsoft Internet Explore 11.0で動作確認しています。</li>
+<li>○お問い合わせは管理人<span class="voteSubTitle"><strong>こやまる</strong></span>まで（koyamaru★gmail.comの★を@に）。 </li>
+</ul>
+<p align="right">（開設日：2004年1月4日）</p>
+</div><!-- #footer -->
+</div>
+</body>
+</html>

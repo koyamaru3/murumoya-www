@@ -1,0 +1,82 @@
+p   { color: #641900; font-size: 16px; line-height: 130%; margin-top: 0px; margin-right: 6px; margin-left: 6px }
+body    { font-size: 14px; line-height: 130%; background-color: #dfb494; margin: 0px }
+.hosoku1  { color: white; font-size: 13px; line-height: 130% }
+.hosoku2  { color: #641900; font-size: 15px; line-height: 130% }
+.smallText   { color: #641900; font-size: 14px; line-height: 130%; }
+a:link { color: #008837 }
+a:hover { color: #018837; background-color: #b6ff71 }
+a:visited  { color: #b23269 }
+a:hover.nasi { background-color: #feedc0 }
+.contents_border  { border-top: 6px dotted #dfb494; width: 98%; height: 6px }
+.hosoku3 { color: gray; font-size: 12px; font-family: "Lucida Console" }
+.hosoku4 { color: #641900; font-size: 10px; line-height: 130% }
+.onbox { DISPLAY: block }
+.offbox { DISPLAY: none }
+.onboxText { background-color: white; margin: 4px 32px; padding: 4px; border: solid 1px #641900; }.font_wakaba {
+	font-weight: bold;
+	color: #85ab1b;
+}
+.font_tomon {
+	font-weight: bold;
+	color: #c6143b;
+}
+.font_anna {
+	font-weight: bold;
+	color: #9B5489;
+}
+.font_manbo {
+	font-weight: bold;
+	color: #d96e15;
+}
+.font_soft {
+	font-weight: bold;
+	color: #5b2b35;
+}
+.font_yamane {
+	font-weight: bold;
+	color: #bda400;
+}
+.font_mirumo {
+	font-weight: bold;
+	color: #67a5bb;
+}
+.font_murumo {
+	font-weight: bold;
+	color: #5aaacb;
+}
+.font_rirumu {
+	font-weight: bold;
+	color: #ca5aa2;
+}
+.font_papy {
+	font-weight: bold;
+	color: #e391bc;
+}
+.font_kumomo {
+	font-weight: bold;
+	color: #cc2915;
+}
+.font_sasuke {
+	font-weight: bold;
+	color: #8400dc;
+}
+.font_panta {
+	font-weight: bold;
+	color: #343f5c;
+}
+.font_aroma {
+	font-weight: bold;
+	color: #009e8b;
+}
+.font_hanzo {
+	font-weight: bold;
+	color: #189857;
+}
+.font_yashichi {
+	font-weight: bold;
+	color: #d9002c;
+}
+.font_akumi {
+	font-weight: bold;
+	color: #b9193d;
+}

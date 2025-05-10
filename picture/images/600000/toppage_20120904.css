@@ -1,0 +1,993 @@
+/* =============== レイアウト関連 =============== */
+div.toptitle {
+ width: 640px;
+ height: 362px;
+ background:url(../../../images/m_top_murumo59.jpg) no-repeat;
+ margin-bottom: 32px;
+}
+
+div.counterbox {
+ width: 216px;
+ float: right;
+ margin-top: 200px;
+ margin-bottom: 16px;
+}
+
+div.news {
+ width: 216px;
+ margin-top: 16px;
+}
+
+div.info {
+ width: 640px;
+ clear: left;
+ text-align: center;
+ margin-bottom: 16px;
+}
+
+div.bbs_novel {
+ width: 353px;
+ margin-left: auto;
+ margin-right: auto;
+}
+
+div.link_diary_profile {
+ width: 462px;
+ margin-left: auto;
+ margin-right: auto;
+}
+
+div.infobox {
+ width: 440px;
+ text-align: center;
+ border: 1px solid #641900;
+ background: #ffffff;
+ margin-left: auto;
+ margin-right: auto;
+ margin-bottom: 16px;
+}
+
+div.infobox2 {
+ width: 540px;
+ text-align: center;
+ border: 1px solid #641900;
+ background: #ffffa0;
+ margin-left: auto;
+ margin-right: auto;
+ margin-bottom: 16px;
+}
+
+div.largecolumn {
+ width: 437px;
+ float: left;
+ margin-bottom: 16px;
+}
+
+div.smallcolumn {
+ width: 188px;
+ float:left;
+ margin-right: 15px;
+ margin-bottom: 16px;
+}
+
+div.uranai {
+ width: 437px;
+ height: 140px;
+ margin-bottom: 16px;
+ 
+}
+
+div.largecontent {
+ width: 411px;
+ background: #fee9d1;
+ padding: 13px 13px;
+ border-radius: 13px;
+ -moz-border-radius: 13px;
+ -webkit-border-radius: 13px;
+ behavior: url(../../../import/border-radius.htc);
+ margin-bottom: 16px;
+}
+
+div.vote {
+ width: 188px;
+ margin-bottom: 16px;
+}
+
+div.smallcontent {
+ width: 162px;
+ background: #fee9d1;
+ padding: 13px 13px;
+ border-radius: 13px;
+ -moz-border-radius: 13px;
+ -webkit-border-radius: 13px;
+ behavior: url(../../../import/border-radius.htc);
+ margin-bottom: 16px;
+}
+
+div.smallitem {
+ width:180px;
+ clear: left;
+}
+
+div.item {
+ width: 403px;
+ clear: left;
+}
+
+div.item_thumbnail {
+ width: 80px;
+ float: left;
+ margin-left: 5px;
+ margin-right: 5px;
+}
+
+div.item_note {
+ width: 313px;
+ float: left;
+ text-align: left;
+ margin-top: auto;
+ margin-bottom: auto;
+}
+
+div.notice {
+ width: 540px;
+ margin-left: auto;
+ margin-right: auto;
+ margin-top: 32px;
+ margin-bottom: 16px;
+}
+
+div.category {
+ width: 403px;
+ height: 56px;
+}
+
+div.okashi_category {
+ float: right;
+ width: 232px;　/*403からお菓子(シーフード)のwidthを引いた幅を指定*/
+ height: 56px;
+ margin-bottom: 48px; /*レイアウトに合わせて適宜調整*/
+}
+div.okashi {
+ float: left;
+ width: 171px; /*お菓子(シーフード)のwidthを指定*/
+}
+
+/* 背景が薄い場合(pと同じ色)*/
+textarea { 
+ width: 180px;
+ height: 100px;
+ font-size: 14px;
+ color: #641900;
+ background-color: #dfb494;
+ border :1px dashed #641900;
+ scrollbar-face-color: #dfb494; 
+ scrollbar-track-color: #dfb494; 
+ scrollbar-arrow-color: #641900; 
+ scrollbar-highlight-color: #dfb494; 
+ scrollbar-shadow-color: #dfb494; 
+ scrollbar-3dlight-color: #641900; 
+ scrollbar-darkshadow-color: #641900;
+}
+
+
+/* 背景が濃い場合(白)
+textarea { 
+ width: 180px;
+ height: 100px;
+ font-size: 14px;
+ color: #ffffff;
+ background-color: #dfb494;
+ border :1px dashed #641900;
+ scrollbar-face-color: #dfb494; 
+ scrollbar-track-color: #dfb494; 
+ scrollbar-arrow-color: #641900; 
+ scrollbar-highlight-color: #dfb494; 
+ scrollbar-shadow-color: #dfb494; 
+ scrollbar-3dlight-color: #641900; 
+ scrollbar-darkshadow-color: #641900;
+}
+*/
+/* =============== ボタン関連 =============== */
+
+/* 「絵」ボタン */
+div.pictButton {
+ width:60px;
+ height:54px;
+ background:url(../../../images/m_pict.gif) no-repeat;
+ text-indent:-9999px;
+ display:block;
+ float: right;
+}
+
+div.pictButton a {
+background:url(../../../images/m_pict.gif) no-repeat;
+  width:60px;
+  height:54px;
+  text-indexnt:-9999px;
+  display:block;
+  overflow:hidden
+}
+
+div.pictButton a:hover {
+  background:url(../../../images/m_pict_over.gif) no-repeat;
+}
+
+/* 「記事」ボタン */
+div.articleButton {
+ width:120px;
+ height:56px;
+ background:url(../../../images/m_article.gif) no-repeat;
+ text-indent:-9999px;
+ display:block;
+ float: right;
+}
+
+div.articleButton a {
+background:url(../../../images/m_article.gif) no-repeat;
+  width:120px;
+  height:56px;
+  text-indexnt:-9999px;
+  display:block;
+  overflow:hidden
+}
+
+div.articleButton a:hover {
+  background:url(../../../images/m_article_over.gif) no-repeat;
+}
+
+/* 「小物」ボタン */
+div.komonoButton {
+ width:120px;
+ height:56px;
+ background:url(../../../images/m_komono.gif) no-repeat;
+ text-indent:-9999px;
+ display:block;
+ float: right;
+}
+
+div.komonoButton a {
+background:url(../../../images/m_komono.gif) no-repeat;
+  width:120px;
+  height:56px;
+  text-indexnt:-9999px;
+  display:block;
+  overflow:hidden
+}
+
+div.komonoButton a:hover {
+  background:url(../../../images/m_komono_over.gif) no-repeat;
+}
+
+/* 「お菓子」ボタン */
+div.okashiButton {
+ width:174px;
+ height:55px;
+ background:url(../../../images/m_okashi.gif) no-repeat;
+ text-indent:-9999px;
+ display:block;
+ float: right;
+}
+
+div.okashiButton a {
+background:url(../../../images/m_okashi.gif) no-repeat;
+  width:174px;
+  height:55px;
+  text-indexnt:-9999px;
+  display:block;
+  overflow:hidden
+}
+
+div.okashiButton a:hover {
+  background:url(../../../images/m_okashi_over.gif) no-repeat;
+}
+
+/* 「サスケとカメリとウメの妖精」ボタン */
+div.umeButton {
+ width:117px;
+ height:27px;
+ float: left;
+ background:url(../../icon/ume.gif) no-repeat;
+ text-indent:-9999px;
+ display:block;
+}
+
+div.umeButton a {
+background:url(../../icon/ume.gif) no-repeat;
+  width:117px;
+  height:27px;
+  text-indexnt:-9999px;
+  display:block;
+  overflow:hidden
+}
+
+div.umeButton a:hover {
+  background:url(../../icon/ume_over.gif) no-repeat;
+}
+
+/* 「恋する妖精・ヤマネ編」ボタン */
+div.koiyamaneButton {
+ width:103px;
+ height:27px;
+ float: left;
+ background:url(../../icon/koiyamane.gif) no-repeat;
+ text-indent:-9999px;
+ display:block;
+}
+
+div.koiyamaneButton a {
+background:url(../../icon/koiyamane.gif) no-repeat;
+  width:103px;
+  height:27px;
+  text-indexnt:-9999px;
+  display:block;
+  overflow:hidden
+}
+
+div.koiyamaneButton a:hover {
+  background:url(../../icon/koiyamane_over.gif) no-repeat;
+}
+
+/* 「お菓子への招待」ボタン */
+div.syoutaiButton {
+ width:119px;
+ height:27px;
+ float: left;
+ background:url(../../icon/syoutai.gif) no-repeat;
+ text-indent:-9999px;
+ display:block;
+}
+
+div.syoutaiButton a {
+background:url(../../icon/syoutai.gif) no-repeat;
+  width:119px;
+  height:27px;
+  text-indexnt:-9999px;
+  display:block;
+  overflow:hidden
+}
+
+div.syoutaiButton a:hover {
+  background:url(../../icon/syoutai_over.gif) no-repeat;
+}
+
+/* 「怪盗チョコソフト」ボタン */
+div.chocosoftButton {
+ width:114px;
+ height:27px;
+ float: left;
+ background:url(../../icon/chocosoft.gif) no-repeat;
+ text-indent:-9999px;
+ display:block;
+}
+
+div.chocosoftButton a {
+background:url(../../icon/chocosoft.gif) no-repeat;
+  width:114px;
+  height:27px;
+  text-indexnt:-9999px;
+  display:block;
+  overflow:hidden
+}
+
+div.chocosoftButton a:hover {
+  background:url(../../icon/chocosoft_over.gif) no-repeat;
+}
+
+/* 「恋する妖精・アロマ編」ボタン */
+div.koiaromaButton {
+ width:103px;
+ height:27px;
+ float: left;
+ background:url(../../icon/koiaroma.gif) no-repeat;
+ text-indent:-9999px;
+ display:block;
+}
+
+div.koiaromaButton a {
+background:url(../../icon/koiaroma.gif) no-repeat;
+  width:103px;
+  height:27px;
+  text-indexnt:-9999px;
+  display:block;
+  overflow:hidden
+}
+
+div.koiaromaButton a:hover {
+  background:url(../../icon/koiaroma_over.gif) no-repeat;
+}
+
+/* 「恋する妖精・パピィ編」ボタン */
+div.koipapyButton {
+ width:103px;
+ height:27px;
+ float: left;
+ background:url(../../icon/koipapy.gif) no-repeat;
+ text-indent:-9999px;
+ display:block;
+}
+
+div.koipapyButton a {
+background:url(../../icon/koipapy.gif) no-repeat;
+  width:103px;
+  height:27px;
+  text-indexnt:-9999px;
+  display:block;
+  overflow:hidden
+}
+
+div.koipapyButton a:hover {
+  background:url(../../icon/koipapy_over.gif) no-repeat;
+}
+
+/* 「サスケくんとカメリちゃんと」ボタン */
+div.sasukameButton {
+ width:103px;
+ height:26px;
+ float: left;
+ background:url(../../icon/sasukame.gif) no-repeat;
+ text-indent:-9999px;
+ display:block;
+}
+
+div.sasukameButton a {
+background:url(../../icon/sasukame.gif) no-repeat;
+  width:103px;
+  height:26px;
+  text-indexnt:-9999px;
+  display:block;
+  overflow:hidden
+}
+
+div.sasukameButton a:hover {
+  background:url(../../icon/sasukame_over.gif) no-repeat;
+}
+
+/* 「温泉と恋のストーリー」ボタン */
+div.koi_onsenButton {
+ width:103px;
+ height:26px;
+ float: left;
+ background:url(../../icon/koi_onsen.gif) no-repeat;
+ text-indent:-9999px;
+ display:block;
+}
+
+div.koi_onsenButton a {
+background:url(../../icon/koi_onsen.gif) no-repeat;
+  width:103px;
+  height:26px;
+  text-indexnt:-9999px;
+  display:block;
+  overflow:hidden
+}
+
+div.koi_onsenButton a:hover {
+  background:url(../../icon/koi_onsen_over.gif) no-repeat;
+}
+
+/* 「ガビンストーリー」ボタン */
+div.gabin_storyButton {
+ width:109px;
+ height:27px;
+ float: left;
+ background:url(../../icon/gabin_story.gif) no-repeat;
+ text-indent:-9999px;
+ display:block;
+}
+
+div.gabin_storyButton a {
+background:url(../../icon/gabin_story.gif) no-repeat;
+  width:109px;
+  height:27px;
+  text-indexnt:-9999px;
+  display:block;
+  overflow:hidden
+}
+
+div.gabin_storyButton a:hover {
+  background:url(../../icon/gabin_story_over.gif) no-repeat;
+}
+
+/* 「手描きイラスト企画」ボタン */
+div.illustKikakuButton {
+ width:174px;
+ height:27px;
+ float: left;
+ background:url(../../../images/m_illust_kikaku.gif) no-repeat;
+ text-indent:-9999px;
+ display:block;
+}
+
+div.illustKikakuButton a {
+background:url(../../../images/m_illust_kikaku.gif) no-repeat;
+  width:174px;
+  height:27px;
+  text-indexnt:-9999px;
+  display:block;
+  overflow:hidden
+}
+
+div.illustKikakuButton a:hover {
+  background:url(../../../images/m_illust_kikaku_over.gif) no-repeat;
+}
+
+/* 「手描きイラスト企画2」ボタン */
+div.illustKikaku2Button {
+ width:175px;
+ height:27px;
+ float: left;
+ background:url(../../../images/m_illust_kikaku2.gif) no-repeat;
+ text-indent:-9999px;
+ display:block;
+}
+
+div.illustKikaku2Button a {
+background:url(../../../images/m_illust_kikaku2.gif) no-repeat;
+  width:175px;
+  height:27px;
+  text-indexnt:-9999px;
+  display:block;
+  overflow:hidden
+}
+
+div.illustKikaku2Button a:hover {
+  background:url(../../../images/m_illust_kikaku2_over.gif) no-repeat;
+}
+
+/* 「いただきもの」ボタン */
+div.itadakiButton {
+ width:105px;
+ height:27px;
+ float: left;
+ background:url(../../icon/itadaki.gif) no-repeat;
+ text-indent:-9999px;
+ display:block;
+}
+
+div.itadakiButton a {
+background:url(../../icon/itadaki.gif) no-repeat;
+  width:105px;
+  height:27px;
+  text-indexnt:-9999px;
+  display:block;
+  overflow:hidden
+}
+
+div.itadakiButton a:hover {
+  background:url(../../icon/itadaki_over.gif) no-repeat;
+}
+
+/* 「いただきもの小説」ボタン */
+div.itadakinovelButton {
+ width:143px;
+ height:27px;
+ float: left;
+ background:url(../../../etc/images/itadakinovel.gif) no-repeat;
+ text-indent:-9999px;
+ display:block;
+}
+
+div.itadakinovelButton a {
+background:url(../../../etc/images/itadakinovel.gif) no-repeat;
+  width:143px;
+  height:27px;
+  text-indexnt:-9999px;
+  display:block;
+  overflow:hidden
+}
+
+div.itadakinovelButton a:hover {
+  background:url(../../../etc/images/itadakinovel_over.gif) no-repeat;
+}
+
+/* 「投票結果」ボタン */
+div.voteButton {
+ width:137px;
+ height:28px;
+ float: left;
+ background:url(../../../etc/images/vote.gif) no-repeat;
+ text-indent:-9999px;
+ display:block;
+}
+
+div.voteButton a {
+background:url(../../../etc/images/vote.gif) no-repeat;
+  width:137px;
+  height:28px;
+  text-indexnt:-9999px;
+  display:block;
+  overflow:hidden
+}
+
+div.voteButton a:hover {
+  background:url(../../../etc/images/vote_over.gif) no-repeat;
+}
+
+/* 「ムルモの旅」ボタン */
+div.tabiButton {
+ width:132px;
+ height:28px;
+ float: left;
+ background:url(../../../etc/images/tabi.gif) no-repeat;
+ text-indent:-9999px;
+ display:block;
+}
+
+div.tabiButton a {
+background:url(../../../etc/images/tabi.gif) no-repeat;
+  width:132px;
+  height:28px;
+  text-indexnt:-9999px;
+  display:block;
+  overflow:hidden
+}
+
+div.tabiButton a:hover {
+  background:url(../../../etc/images/tabi_over.gif) no-repeat;
+}
+
+/* 「記念日」ボタン */
+div.kinenbiButton {
+ width:68px;
+ height:24px;
+ float: left;
+ background:url(../../../images/m_kinenbi.gif) no-repeat;
+ text-indent:-9999px;
+ display:block;
+}
+
+div.kinenbiButton a {
+background:url(../../../images/m_kinenbi.gif) no-repeat;
+  width:68px;
+  height:24px;
+  text-indexnt:-9999px;
+  display:block;
+  overflow:hidden
+}
+
+div.kinenbiButton a:hover {
+  background:url(../../../images/m_kinenbi_over.gif) no-repeat;
+}
+
+/* 「100000Hit」ボタン */
+div.hit100000Button {
+ width:55px;
+ height:27px;
+ float: left;
+ background:url(../../icon/100000.gif) no-repeat;
+ text-indent:-9999px;
+ display:block;
+}
+
+div.hit100000Button a {
+background:url(../../icon/100000.gif) no-repeat;
+  width:55px;
+  height:27px;
+  text-indexnt:-9999px;
+  display:block;
+  overflow:hidden
+}
+
+div.hit100000Button a:hover {
+  background:url(../../icon/100000_over.gif) no-repeat;
+}
+
+/* 「200000Hit」ボタン */
+div.hit200000Button {
+ width:55px;
+ height:27px;
+ float: left;
+ background:url(../../icon/200000.gif) no-repeat;
+ text-indent:-9999px;
+ display:block;
+}
+
+div.hit200000Button a {
+background:url(../../icon/200000.gif) no-repeat;
+  width:55px;
+  height:27px;
+  text-indexnt:-9999px;
+  display:block;
+  overflow:hidden
+}
+
+div.hit200000Button a:hover {
+  background:url(../../icon/200000_over.gif) no-repeat;
+}
+
+/* 「300000Hit」ボタン */
+div.hit300000Button {
+ width:55px;
+ height:27px;
+ float: left;
+ background:url(../../icon/300000.gif) no-repeat;
+ text-indent:-9999px;
+ display:block;
+}
+
+div.hit300000Button a {
+background:url(../../icon/300000.gif) no-repeat;
+  width:55px;
+  height:27px;
+  text-indexnt:-9999px;
+  display:block;
+  overflow:hidden
+}
+
+div.hit300000Button a:hover {
+  background:url(../../icon/300000_over.gif) no-repeat;
+}
+
+/* 「400000Hit」ボタン */
+div.hit400000Button {
+ width:55px;
+ height:27px;
+ float: left;
+ background:url(../../icon/400000.gif) no-repeat;
+ text-indent:-9999px;
+ display:block;
+}
+
+div.hit400000Button a {
+background:url(../../icon/400000.gif) no-repeat;
+  width:55px;
+  height:27px;
+  text-indexnt:-9999px;
+  display:block;
+  overflow:hidden
+}
+
+div.hit400000Button a:hover {
+  background:url(../../icon/400000_over.gif) no-repeat;
+}
+
+/* 「500000Hit」ボタン */
+div.hit500000Button {
+ width:55px;
+ height:27px;
+ float: left;
+ background:url(../../icon/500000.gif) no-repeat;
+ text-indent:-9999px;
+ display:block;
+}
+
+div.hit500000Button a {
+background:url(../../icon/500000.gif) no-repeat;
+  width:55px;
+  height:27px;
+  text-indexnt:-9999px;
+  display:block;
+  overflow:hidden
+}
+
+div.hit500000Button a:hover {
+  background:url(../../icon/500000_over.gif) no-repeat;
+}
+
+/* 「携帯電話用待ち受けFlash」ボタン */
+div.paperButton {
+ width:186px;
+ height:36px;
+ float: left;
+ background:url(../../../images/m_paper_logo.gif) no-repeat;
+ text-indent:-9999px;
+ display:block;
+}
+
+div.paperButton a {
+background:url(../../../images/m_paper_logo.gif) no-repeat;
+  width:186px;
+  height:36px;
+  text-indexnt:-9999px;
+  display:block;
+  overflow:hidden
+}
+
+div.paperButton a:hover {
+  background:url(../../../images/m_paper_logo_over.gif) no-repeat;
+}
+
+/* 「待ち受けiアプリ おやすみミルモ」ボタン */
+div.sleepButton {
+ width:161px;
+ height:36px;
+ float: left;
+ background:url(../../../images/m_sleep_logo.gif) no-repeat;
+ text-indent:-9999px;
+ display:block;
+}
+
+div.sleepButton a {
+background:url(../../../images/m_sleep_logo.gif) no-repeat;
+  width:161px;
+  height:36px;
+  text-indexnt:-9999px;
+  display:block;
+  overflow:hidden
+}
+
+div.sleepButton a:hover {
+  background:url(../../../images/m_sleep_logo_over.gif) no-repeat;
+}
+
+/* 「おやすみミルモFlash」ボタン */
+div.sleepFlashButton {
+ width:175px;
+ height:36px;
+ float: left;
+ background:url(../../../images/m_sleep_flash_logo.gif) no-repeat;
+ text-indent:-9999px;
+ display:block;
+}
+
+div.sleepFlashButton a {
+background:url(../../../images/m_sleep_flash_logo.gif) no-repeat;
+  width:175px;
+  height:36px;
+  text-indexnt:-9999px;
+  display:block;
+  overflow:hidden
+}
+
+div.sleepFlashButton a:hover {
+  background:url(../../../images/m_sleep_flash_logo_over.gif) no-repeat;
+}
+
+/* 「パティシエ・リルムの特選お菓子」ボタン */
+div.okashi_subButton {
+ width:274px;
+ height:26px;
+ float: left;
+ background:url(../../../images/m_okashi_subtitle.gif) no-repeat;
+ text-indent:-9999px;
+ display:block;
+}
+
+div.okashi_subButton a {
+background:url(../../../images/m_okashi_subtitle.gif) no-repeat;
+  width:274px;
+  height:26px;
+  text-indexnt:-9999px;
+  display:block;
+  overflow:hidden
+}
+
+div.okashi_subButton a:hover {
+  background:url(../../../images/m_okashi_subtitle_over.gif) no-repeat;
+}
+
+/* 「掲示板」ボタン */
+div.bbsButton {
+ width:177px;
+ height:122px;
+ float: left;
+ background:url(../../../images/m_bbs4.gif) no-repeat;
+ text-indent:-9999px;
+ display:block;
+}
+
+div.bbsButton a {
+background:url(../../../images/m_bbs4.gif) no-repeat;
+  width:177px;
+  height:122px;
+  text-indexnt:-9999px;
+  display:block;
+  overflow:hidden
+}
+
+div.bbsButton a:hover {
+  background:url(../../../images/m_bbs4_over.gif) no-repeat;
+}
+
+div.bbsButton a:active {
+  background:url(../../../images/m_bbs4_click.gif) no-repeat;
+}
+
+/* 「小説板」ボタン */
+div.novelButton {
+ width:176px;
+ height:122px;
+ float: left;
+ background:url(../../../images/m_novel3.gif) no-repeat;
+ text-indent:-9999px;
+ display:block;
+}
+
+div.novelButton a {
+background:url(../../../images/m_novel3.gif) no-repeat;
+  width:176px;
+  height:122px;
+  text-indexnt:-9999px;
+  display:block;
+  overflow:hidden
+}
+
+div.novelButton a:hover {
+  background:url(../../../images/m_novel3_over.gif) no-repeat;
+}
+
+div.novelButton a:active {
+  background:url(../../../images/m_novel3_click.gif) no-repeat;
+}
+
+/* 「リンク」ボタン */
+div.linkButton {
+ width:154px;
+ height:108px;
+ float: left;
+ background:url(../../../images/m_link3.gif) no-repeat;
+ text-indent:-9999px;
+ display:block;
+}
+
+div.linkButton a {
+background:url(../../../images/m_link3.gif) no-repeat;
+  width:154px;
+  height:108px;
+  text-indexnt:-9999px;
+  display:block;
+  overflow:hidden
+}
+
+div.linkButton a:hover {
+  background:url(../../../images/m_link3_over.gif) no-repeat;
+}
+
+div.linkButton a:active {
+  background:url(../../../images/m_link3_click.gif) no-repeat;
+}
+
+/* 「日記」ボタン */
+div.diaryButton {
+ width:154px;
+ height:108px;
+ float: left;
+ background:url(../../../images/m_diary3.gif) no-repeat;
+ text-indent:-9999px;
+ display:block;
+}
+
+div.diaryButton a {
+background:url(../../../images/m_diary3.gif) no-repeat;
+  width:154px;
+  height:108px;
+  text-indexnt:-9999px;
+  display:block;
+  overflow:hidden
+}
+
+div.diaryButton a:hover {
+  background:url(../../../images/m_diary3_over.gif) no-repeat;
+}
+
+div.diaryButton a:active {
+  background:url(../../../images/m_diary3_click.gif) no-repeat;
+}
+
+/* 「プロフィール」ボタン */
+div.profileButton {
+ width:154px;
+ height:109px;
+ float: left;
+ background:url(../../../images/m_profile3.gif) no-repeat;
+ text-indent:-9999px;
+ display:block;
+}
+
+div.profileButton a {
+background:url(../../../images/m_profile3.gif) no-repeat;
+  width:154px;
+  height:109px;
+  text-indexnt:-9999px;
+  display:block;
+  overflow:hidden
+}
+
+div.profileButton a:hover {
+  background:url(../../../images/m_profile3_over.gif) no-repeat;
+}
+
+div.profileButton a:active {
+  background:url(../../../images/m_profile3_click.gif) no-repeat;
+}

@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="icon" type="image/gif" href="/favicon.ico"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+
+<title>答えの入力ページ</title>
+<link href="/import/contents2015.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+<!--
+-->
+</style>
+<script type="text/javascript" src="/import/lib/jquery-1.11.2.min.js"></script>
+<script type="text/javascript">
+<!--
+$(function() {
+	let keyword = {
+		'かまきり':6789, 'らいおん':500, 'ろうそく':123456, 'ほころびあな':7654, 'おさけ':7777,
+		'いるか':65432, 'しおひがり':100000, 'たんす':5001, 'おわん':87654};
+	$('#submitButton').click(function(){
+		let answer = $(':text[name="answer"]').val();
+		let password = keyword[answer];
+		var insertText = "";
+		if (password != undefined) {
+			insertText = '「' + answer + '」正解です！<br>以下の数字をメモしてくださいね。<br><br><span class="font_rirumu">' + password + '</span>';
+		} else {
+			insertText = '「' + answer + '」残念・・・もう一度がんばってみよう！';
+		}
+		$('#answerArea').html(insertText);
+	});
+});
+
+-->
+</script>
+</head>
+
+<body>
+
+<form id="voteadminForm">
+
+<div id="inputArea">
+答えをひらがなで入力してね<br>
+<input type="text" name="answer" style="width: 200px;">
+</div>
+
+<div id="buttonArea">
+<input type="button" id="submitButton" class="css3button" value="答え合わせ">
+</div>
+
+<br>
+
+<div id="answerArea" style="background-color: white; margin: 8px;">
+</div>
+
+</form>
+</body>
+</html>

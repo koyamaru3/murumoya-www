@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html><!-- InstanceBegin template="/Templates/contents2015.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta charset="utf-8">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>ムルモ屋本舗：投票：投票のお題作成</title>
+<!-- InstanceEndEditable -->
+<link rel="icon" type="image/gif" href="/favicon.ico"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<meta http-equiv="Pragma" content="no-cache">
+<link href="/import/contents2015.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="/import/lib/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="/import/lib/moment.min.js"></script>
+<script type="text/javascript" src="/import/lib/spin.min.js"></script>
+<script type="text/javascript" src="/import/common2015.js"></script>
+<script type="text/javascript" src="/import/lib/jquery-ui.min.js"></script>
+
+<!-- InstanceBeginEditable name="css" -->
+<link type="text/css" href="/import/lib/jquery-ui.css" rel="stylesheet" />
+<style type="text/css">
+<!--
+#toTop { display: block; } /* 非表示にする場合はnone; */
+#title { display: block; } /* 非表示にする場合はnone; */
+#subTitle { display: block; } /* 非表示にする場合はnone; */
+    
+#subTitle {
+    display: block;
+    max-width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+    text-align: center;
+}
+
+#subTitle img {
+    width: 100%;
+}
+
+#voteterm, #voteinterval {
+    width: 53px;
+	font-size:120%;
+	padding:5px;
+    margin-bottom: 12px;
+    color: #35a63e;
+}
+
+#votepass {
+    width: 120px;
+	font-size:120%;
+	padding:5px;
+    margin-bottom: 12px;
+    color: #35a63e;
+}
+
+#voteadmin #voteButtonArea {
+	width: 100%;
+    text-align: center;
+}
+
+.picture {
+    display: block;
+    max-width: 600px;
+}
+.picture img {
+    width: 100%;
+}
+
+ol li {
+    margin-left: 16px;
+}
+    
+-->
+</style>
+<!-- InstanceEndEditable -->
+<!-- 独自JavaScriptを定義する場合 -->
+<!-- InstanceBeginEditable name="javascript" -->
+<script type="text/javascript">
+var title;
+var items;
+var term;
+var interval;
+var commenttype;
+var supplement;
+    
+$(function() {
+    $('#createVoteDialog').dialog({
+        autoOpen: false,
+		width: 600,
+        title: '投票の作成',
+        closeOnEscape: true,
+        modal: true,
+        buttons: {
+            "OK": function(){
+                var jsonItems = [];
+                for (var i=0; i<items.length; i++) {
+                    jsonItems.push(items[i]);
+                }
+                var jsonData = {
+                    title: title,
+                    term: term,
+                    interval: interval,
+                    commenttype: commenttype,
+                    supplement: supplement,
+                    items: jsonItems
+                };
+                $.ajax({
+                    url: '/api/votes/',
+                    type: 'POST',
+                    data: JSON.stringify(jsonData),
+                    contentType: 'application/JSON',
+                    scriptCharset: 'utf-8',
+                })
+                .done(function(data, textStatus, jqXHR) {
+                    $("#voteadminForm").hide();
+                    var insertText = "";
+                    insertText += "<p>以下の内容で投票を作成しました。";
+                    insertText += "<ol>";
+                    insertText += "<li>タイトル<br>" + title + "</li><br>";
+                    insertText += "<li>項目<br>" + items + "</li><br>";
+                    insertText += "<li>投票期間<br>" + term + "日間</li><br>";
+                    insertText += "<li>投票間隔<br>" + interval + "時間</li><br>";
+                    if (commenttype == "0") insertText += "<li>コメント<br>任意</li><br>";
+                    if (commenttype == "1") insertText += "<li>コメント<br>必須</li><br>";
+                    insertText += "<li>注意事項<br>" + supplement + "</li><br></ol></p>";
+                    $("#voteadminMessage").html(insertText);
+                })
+                .fail(function(jqXHR, textStatus, errorThrown) {
+                    $("#voteadminMessage").html("<p>エラーが発生しました。内容を確認し、再度投票を作成してください。</p>");
+                })
+                .always(function( jqXHR, textStatus ) {
+                });
+                
+                $(this).dialog('close');
+            }
+        }
+    });
+        
+    $('#voteCreateButton').click(function(){
+        title = $(':text[name="title"]').val();
+        items = ($('#item').val()).split(/\r\n|\r|\n/);
+        term = $(':text[name="term"]').val();
+        interval = $(':text[name="interval"]').val();
+        commenttype = $(':radio[name="votecommenttype"]:checked').val();
+        supplement = ($('#votesupplement').val()).replace(/[\n\r]/g, "<br>");
+        
+        var insertText = "";
+        insertText += 'タイトル：' + title + '<br>';
+        insertText += '項目：<br>';
+        for (var i=0; i<items.length; i++) {
+            insertText += items[i] + '<br>';
+        }
+        insertText += '投票期間：' + term + '<br>';
+        insertText += '投票間隔：' + interval + '<br>';
+		if (commenttype == "0") {insertText += 'コメント：任意<br>';}
+		else if (commenttype == "1") {insertText += 'コメント：必須<br>';}
+        insertText += '注意事項：' + supplement + '<br>';
+            
+        
+        $('#voteItems').html(insertText);
+        $('#createVoteDialog').dialog('open');
+    });
+});
+function nl2br(str) {
+    return str.replace(/[\n\r]/g, "<br />");
+}
+    
+</script>
+<!-- InstanceEndEditable -->
+</head>
+
+<body>
+    
+<div id="header">
+<div id="toTop"><a class="image" href="/index.html"><img src="/images/contents2015/toTop.png" alt="トップページへ" class="rollover" title="トップページへ"></a></div>
+<div id="title"><!-- InstanceBeginEditable name="title" -->投票のお題作成<!-- InstanceEndEditable --></div>
+</div>
+
+<div id="subTitle"><!-- InstanceBeginEditable name="subTitle" --><img src="images/voteadmin_title.png"><!-- InstanceEndEditable --></div>
+
+<div id="article"><!-- InstanceBeginEditable name="article" -->
+<p id="voteadminMessage">記入欄を入力して、投票を作成してください。</p>
+
+<p class="picture">&nbsp;</p>
+<form id="voteadminForm">
+<ol>
+<li>タイトル<br>
+    <input type="text" name="title"></li>
+<li>項目（行頭に「・」は不要、改行で区切る）<br>
+    <textarea id="item" rows="4"></textarea></li>
+<li>投票期間（ｘ日間）<br>
+    <input type="text" id="voteterm" name="term"></li>
+
+<li>投票間隔（ｘ時間、間隔無しなら0を設定）<br>
+    <input type="text" id="voteinterval" name="interval"></li>
+<li>コメント<br>
+    <input type="radio" name="votecommenttype" value="0" checked>任意　
+    <input type="radio" name="votecommenttype" value="1">必須</li><br>
+<li>注意事項<br>
+    <textarea id="votesupplement" rows="4">x時間に1回投票できます。</textarea></li>
+<li>パスワード<br>
+    <input type="password" id="votepass" name="password"></li>
+</ol>
+<div id="voteButtonArea">
+    <input type="button" id="voteCreateButton" class="css3button" value="投票を作成する">
+</div>
+</form>
+
+<div id="createVoteDialog">
+    <p>以下の内容で投票を作成します。</p>
+    <p id="voteItems">　　</p>
+</div>
+
+<!-- InstanceEndEditable --><!-- InstanceBeginEditable name="release" -->
+<p class="release">(2016/3/28)</p>
+<!-- InstanceEndEditable --></div>
+
+<div id="footer"><!-- InstanceBeginEditable name="back" --><a class="image" href="/index.html"><img src="/images/contents2015/back.png" alt="戻る" class="rollover" title="戻る"></a><!-- InstanceEndEditable --></div>
+</body>
+<!-- InstanceEnd --></html>

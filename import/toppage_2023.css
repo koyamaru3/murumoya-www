@@ -1,0 +1,607 @@
+@charset "utf-8";
+* {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+         -o-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+            box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	font-size: 16px;
+    text-size-adjust: 90%;
+    -o-text-size-adjust: 90%;
+    -ms-text-size-adjust: 90%;
+    -moz-text-size-adjust: 90%;
+	-webkit-text-size-adjust: 90%;
+	font-family:
+        "ヒラギノ角ゴ Pro W3",
+        "Hiragino Kaku Gothic Pro",
+        "メイリオ",
+        Meiryo,
+        Osaka,
+        sans-serif,
+        "モトヤLマルベリ3等幅";
+	background-color: #f4b783;
+    background-image: url("/images/contents2015/background.png");
+
+    padding: 0px;
+    margin: 0px;
+}
+
+/* 共通の本文、箇条書き */
+div, p, th, td, li {
+    line-height: 130%;
+    color: #641900;
+}
+
+p {
+	padding-top: 16px;
+	padding-bottom: 16px;
+}
+
+img {
+	border: 0;
+	vertical-align: bottom;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+a.image:hover { background-color: transparent; }
+
+th, td {
+	background-color: #FFFFFF;
+	border: 1px solid #641900;
+	padding: 2px;
+	font-size: 0.8em;
+}
+th {
+	background-color: #FFFFCC;
+}
+hr {
+	clear: left;
+	border: 0;
+	height: 10px;
+	background-image: url(/images/contents2015/hr.png);
+	background-repeat: repeat-x;
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+
+a:link {
+	color: #008837;
+}
+a:hover {
+	color: #018837;
+	background-color: #b6ff71;
+}
+a:visited {
+	color: #b23269
+}
+
+a img.rollover:hover {
+	background-color: transparent;
+}
+
+
+
+
+
+input[type="text"] {
+	width: 100%;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body {
+	background-color: #dfb494;
+}
+table {
+	border-collapse: collapse;
+}
+p, th, td {
+	margin-bottom: 1em;
+	margin-left: 0em;
+	margin-right: 0em;
+	margin-top: 0em;
+}
+th, td {
+	background-color: #FFFFFF;
+	border: 1px solid #641900;
+	padding-left: 4px;
+	padding-top: 4px;
+	padding-right: 4px;
+	padding-bottom: 4px;
+}
+
+a:hover.nasi {
+	background-color: #feedc0
+}
+a.image:hover {
+	background-color: transparent;
+}
+img {
+	border: 0;
+	vertical-align: bottom;
+}
+
+
+
+#wrapper {
+    max-width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#header {
+	position: relative;
+}
+
+#headerPicture {
+    display: block;
+    max-width: 640px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#headerPicture img {
+    width: 100%;
+}
+
+#counterbox {
+    display: block;
+	max-width: 216px;
+}
+
+#wrapper #notice {
+	width: 100%;
+	text-align: center;
+}
+
+#wrapper .infobox {
+	max-width: 440px;
+	border: 1px solid #641900;
+	background: #ffffff;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+#wrapper .infobox2 {
+	width: 100%;
+	text-align: center;
+}
+
+@media screen and (max-width: 639px) {
+	#container {
+		width: 300px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+@media screen and (min-width: 640px) and (max-width: 976px) {
+	#container {
+		width: 640px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+#footer {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+#footer ul {
+	text-align: left;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	max-width: 640px;
+}
+#footer ul li {
+	font-size: 15px;
+	list-style-type: none;
+}
+#footer p {
+	font-size: 15px;
+}
+
+
+/* ------------------- 以下はコンテンツのボタンのスタイル定義 ------------------- */
+#container .item {
+	margin-bottom: 16px;	
+}
+
+#profile_diary, #kikaku_murumuru {
+	display: table;
+	width: 300px;
+	height: 85px;
+}
+
+.item2 {
+	display: table-cell;
+	width: 150px;
+	height: 85px;
+}
+
+#novel {
+	width: 300px;
+	height: 113px;
+}
+
+#sozai {
+	width: 300px;
+	height: 90px;
+}
+
+#comic {
+	width: 300px;
+	height: 142px;
+}
+
+#bbs, #novel_bbs {
+	width: 300px;
+	height: 150px;
+}
+
+.bbs_novel {
+	width: 180px;
+	height: 150px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.item2 img, #sozai img, #novel img, #bbs img, #novel_bbs img, #comic img {
+	width: 100%;
+}
+
+/* hover時に3px浮かせる */
+.item2 img:hover, #sozai img:hover, #bbs img:hover, #novel img:hover, #novel_bbs img:hover, #comic img:hover {
+    top: -3px;
+    position: relative;
+}
+
+
+
+
+/* ------------------- 以下はナビゲーションバーのスタイル定義 ------------------- */
+.navi {
+	z-index: 100;
+	position: fixed;
+	top: -48px;
+	left: 0;
+	width: 100%;
+	height: 48px;
+	background-color: rgba(255, 193, 36, 0.8);
+/*ackground-color: #fff5dc;*/
+}
+
+.naviItems {
+    max-width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+}
+
+.naviItems:before,
+.naviItems:after {
+    content: "";
+    display: table;
+}
+
+.naviItems:after {
+    clear: both;
+}
+
+.naviHead {
+	float: left;
+	max-width: 48px;
+	display: block;
+	margin-right: 48px;
+}
+
+.naviItem {
+	float: left;
+	max-width: 60px;
+	display: block;
+}
+
+.naviHead img {
+	width: 100%;
+}
+
+.naviItem img {
+	width: 100%;
+}
+
+/* ------------------- 以下は部品のスタイル定義 ------------------- */
+textarea {
+    width: 100%;
+	font-size:120%;
+	padding:5px;
+    margin-bottom: 12px;
+    color: #35a63e;
+}
+    
+textarea:focus {
+    background-color: #FEFCB4;
+    outline: none;
+    border: 1px solid #ff0000;
+}
+
+input[type=text] {
+    width: 100%;
+	font-size:120%;
+	padding:5px;
+    margin-bottom: 12px;
+    color: #35a63e;
+}
+
+input[type=text]:focus {
+    background-color: #FEFCB4;
+    outline: none;
+    border: 1px solid #ff0000;
+}
+
+input[type=checkbox] {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+input[type=radio] {
+	-webkit-transform: scale(2.0);
+	transform: scale(2.0);
+    vertical-align: middle;
+    margin-right: 12px;
+}
+
+input[type=button] {
+    font-weight: bold;
+	font-size: 14px;
+	color: #000000;
+	padding: 8px 20px;
+    background: linear-gradient(
+		to bottom,
+		#ffffff 0%,
+		#e6dbc8 50%,
+		#d4c09f 50%,
+		#d4c09f 90%,
+		#3b2f1a);
+	background: -moz-linear-gradient(
+		top,
+		#ffffff 0%,
+		#e6dbc8 50%,
+		#d4c09f 50%,
+		#d4c09f 90%,
+		#3b2f1a);
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(#ffffff),
+		color-stop(0.50, #e6dbc8),
+		color-stop(0.50, #d4c09f),
+		color-stop(0.90, #d4c09f),
+		to(#3b2f1a));
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	border: 2px solid #000000;
+	-moz-box-shadow:
+		1px 1px 0px rgba(191,177,151,1),
+		inset 0px 0px 5px rgba(255,255,255,0.6);
+	-webkit-box-shadow:
+		1px 1px 0px rgba(191,177,151,1),
+		inset 0px 0px 5px rgba(255,255,255,0.6);
+	box-shadow:
+		1px 1px 0px rgba(191,177,151,1),
+		inset 0px 0px 5px rgba(255,255,255,0.6);
+	text-shadow:
+		0px 1px 0px rgba(255,255,255,1),
+		0px 1px 0px rgba(255,255,255,0.3);
+}
+
+input[type=button]:hover {
+    padding: 8px 20px;
+    background-color: #ffb529;
+    background: linear-gradient(
+		to bottom,
+		#ffffff 0%,
+		#ffb529 50%,
+		#ea9800 50%,
+		#c78200 90%,
+		#603f00);
+	background: -moz-linear-gradient(
+		top,
+		#ffffff 0%,
+		#ffb529 50%,
+		#ea9800 50%,
+		#c78200 90%,
+		#603f00);
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(#ffffff),
+		color-stop(0.50, #ffb529),
+		color-stop(0.50, #ea9800),
+		color-stop(0.90, #c78200),
+		to(#603f00));
+    -webkit-box-shadow:inset 0px 0px 3px #fff;
+    -moz-box-shadow:inset 0px 0px 3px #fff;
+    box-shadow:inset 0px 0px 3px #fff;
+}
+
+input[type=button]:active {
+position: relative;
+    top: 1px;
+    background: linear-gradient(
+		to bottom,
+		#ffb529 0%,
+		#f0a619 50%,
+		#ea9800 50%,
+		#c78200 90%,
+		#603f00);
+	background: -moz-linear-gradient(
+		top,
+		#ffb529 0%,
+		#f0a619 50%,
+		#ea9800 50%,
+		#c78200 90%,
+		#603f00);
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(#ffb529),
+		color-stop(0.50, #f0a619),
+		color-stop(0.50, #ea9800),
+		color-stop(0.90, #c78200),
+		to(#603f00));
+	-webkit-box-shadow:
+		1px -2px 0px rgba(191,177,151,1),
+		inset 0px 0px 5px rgba(255,255,255,0.6);
+	-moz-box-shadow:
+		1px -2px 0px rgba(191,177,151,1),
+		inset 0px 0px 5px rgba(255,255,255,0.6);
+	box-shadow:
+		1px -2px 0px rgba(191,177,151,1),
+		inset 0px 0px 5px rgba(255,255,255,0.6);
+}
+
+.font_tomon {
+	font-weight: bold;
+	color: #c6143b;
+}
+.font_anna {
+	font-weight: bold;
+	color: #9B5489;
+}
+.font_chie {
+	font-weight: bold;
+	color: #293f81;
+}
+.font_manbo {
+	font-weight: bold;
+	color: #d96e15;
+}
+.font_soft {
+	font-weight: bold;
+	color: #5b2b35;
+}
+.font_yamane {
+	font-weight: bold;
+	color: #bda400;
+}
+.font_mirumo {
+	font-weight: bold;
+	color: #67a5bb;
+}
+.font_murumo {
+	font-weight: bold;
+	color: #5aaacb;
+}
+.font_rirumu {
+	font-weight: bold;
+	color: #ca5aa2;
+}
+.font_papy {
+	font-weight: bold;
+	color: #e391bc;
+}
+.font_kumomo {
+	font-weight: bold;
+	color: #cc2915;
+}
+.font_sasuke {
+	font-weight: bold;
+	color: #8400dc;
+}
+.font_panta {
+	font-weight: bold;
+	color: #343f5c;
+}
+.font_aroma {
+	font-weight: bold;
+	color: #009e8b;
+}
+.font_hanzo {
+	font-weight: bold;
+	color: #189857;
+}
+.font_yashichi {
+	font-weight: bold;
+	color: #d9002c;
+}
+.font_akumi {
+	font-weight: bold;
+	color: #b9193d;
+}
+.font_nezumi {
+	font-weight: bold;
+	color: #0B2D7A;
+}
+.font_gabin {
+	font-weight: bold;
+	color: #674284;
+}
+.font_kameri {
+	font-weight: bold;
+	color: #1E7F47;
+}
+.font_anrisenri {
+	font-weight: bold;
+	color: #20825A;
+}
+.font_kinta {
+	font-weight: bold;
+	color: #A59A07;
+}
+
+.font_beruru {
+	font-weight: bold;
+	color: #a54ba2;
+}
+
+.font_mirai {
+	font-weight: bold;
+	color: #eea92a;
+}
+
+.font_poro {
+	font-weight: bold;
+	color: #3ab327;
+}
+
+.font_fia {
+	font-weight: bold;
+	color: #db4031;
+}
+.font_aqua {
+	font-weight: bold;
+	color: #0008e6;
+}
+.font_win {
+	font-weight: bold;
+	color: #60a18d;
+}
+.font_donta {
+	font-weight: bold;
+	color: #8e5733;
+}
+.font_pikumo {
+	font-weight: bold;
+	color: #ab85ca;
+}
+.font_rine {
+	font-weight: bold;
+	color: #ff9a45;
+}
+.sabun_new {
+	color: #189857;
+}
+.sabun_old {
+	color: #189857;
+	text-decoration: line-through;
+}

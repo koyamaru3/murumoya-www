@@ -1,0 +1,166 @@
+@charset "utf-8";
+
+#container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 900px;
+}
+#header {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+#header:after {
+    content: "."; 
+    display: block; 
+    height: 0; 
+    font-size:0;	
+    clear: both; 
+    visibility:hidden;
+}
+
+.note {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.panel {
+    margin-left: 8px;
+    margin-right: 8px;
+    border-radius: 16px;        /* CSS3草案 */  
+    -webkit-border-radius: 16px;    /* Safari,Google Chrome用 */  
+    -moz-border-radius: 16px;   /* Firefox用 */         
+    box-shadow: 4px 4px 8px #ac8080;
+}
+
+.panelAuthor {
+    font-weight: bold;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 12px;
+    padding-bottom: 6px;
+    height: 80px;
+    color: #157688;
+    background-color: #dbede8;
+    background-image:url(/novel/images/novelAuthorBack.png);
+    background-size: 152px 80px;
+    background-position:right center;
+    background-repeat: no-repeat;
+    border-top: 2px solid #ff8799;
+    border-left: 2px solid #ff8799;
+    border-right: 2px solid #ff8799;
+    border-radius: 16px 16px 0px 0px;        /* CSS3草案 */  
+    -webkit-border-radius: 16px 16px 0px 0px;    /* Safari,Google Chrome用 */  
+    -moz-border-radius: 16px 16px 0px 0px;   /* Firefox用 */         
+}
+
+.panelTitle {
+    font-weight: bold;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 12px;
+    padding-bottom: 6px;
+    color: #ffffff;
+    background-color: #ff8799;
+    border: 2px solid #ff8799;
+    border-radius: 16px 16px 0px 0px;        /* CSS3草案 */  
+    -webkit-border-radius: 16px 16px 0px 0px;    /* Safari,Google Chrome用 */  
+    -moz-border-radius: 16px 16px 0px 0px;   /* Firefox用 */         
+}
+
+.panelHeader {
+    font-weight: bold;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 12px;
+    padding-bottom: 6px;
+    color: #ff556e;
+    background-color: #ffced6;
+    border-left: 2px solid #ff8799;
+    border-right: 2px solid #ff8799;
+}
+
+.panelHeader2 {
+    font-weight: bold;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 12px;
+    padding-bottom: 6px;
+    color: #0fb273;
+    background-color: #ceffec;
+    border-left: 2px solid #ff8799;
+    border-right: 2px solid #ff8799;
+}
+
+.panelBody {
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #fff9e7;
+    border: 2px;
+    border-color: #ff8799;
+    border-style: none solid solid solid;
+    border-radius: 0px 0px 16px 16px;        /* CSS3草案 */  
+    -webkit-border-radius: 0px 0px 16px 16px;    /* Safari,Google Chrome用 */  
+    -moz-border-radius: 0px 0px 16px 16px;   /* Firefox用 */         
+}
+
+.loginForm {
+    max-width: 400px;
+    margin-left: 20px;
+    margin-right: 8px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 12px;
+    background-color: #fff9e7;
+}
+
+.leftButtonPanel {
+    text-align: left;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.rightButtonPanel {
+    text-align: right;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+
+.novelButton {
+    background-color: #40b373;
+    color: white;
+    padding: 8px;
+    text-decoration: none;
+
+    border-radius: 8px;        /* CSS3草案 */  
+    -webkit-border-radius: 8px;    /* Safari,Google Chrome用 */  
+    -moz-border-radius: 8px;   /* Firefox用 */         
+}
+
+a.novelButton:link {
+	color: white;
+}
+a.novelButton:hover {
+	color: white;
+    background-color: #009944;
+}
+a.novelButton:visited {
+	color: white;
+}
+
+.author {
+    font-weight: bold;
+}
+
+ul {
+    margin-left: 20px;
+    list-style-type: none;
+}
+
+.subTitleList {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

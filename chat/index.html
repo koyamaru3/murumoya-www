@@ -1,0 +1,73 @@
+<!DOCTYPE html>  
+<html lang="ja">  
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <meta name="theme-color" content="#A38A46">
+  <title>ムルモ屋本舗のチャット</title>
+
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import "./scripts/entrance.js";
+  </script>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div id="entrance_container">
+    <div class="title">ムルモ屋本舗のチャット</div>
+    <form accept-charset="UTF-8">
+      <div class="entrance_panel">
+        <div id="input_panel">
+          <label for="name">お名前</label>
+          <input id="entrance_name" name="name" value="">
+        </div>
+      </div>
+       
+      <div class="entrance_panel">
+        <label for="color">色選択</label>
+        <select id="entrance_color" name="color">
+        <option value="maroon">マロン</option>
+        <option value="magenta">マゼンタ</option>
+        <option value="darkcyan">シアン</option>
+        <option value="darkorchid">パープル</option>
+        <option value="green">グリーン</option>
+        <option value="mediumblue">ブルー</option>
+        <option value="hotpink">ピンク</option>
+        <option value="orange">オレンジ</option>
+        </select>
+      </div>
+
+      <div class="entrance_panel clearfix">
+        <p>好きなキャラクターを下から選んでください。</p>
+        <div class="entrance_face"><p class="entrance_face_img"><img src="./images/faces/mirumo.png"></p><p><input type="radio" name="face" value="mirumo" checked></p></div>
+        <div class="entrance_face"><p class="entrance_face_img"><img src="./images/faces/rirumu.png"></p><p><input type="radio" name="face" value="rirumu"></p></div>
+        <div class="entrance_face"><p class="entrance_face_img"><img src="./images/faces/yashichi.png"></p><p><input type="radio" name="face" value="yashichi"></p></div>
+        <div class="entrance_face"><p class="entrance_face_img"><img src="./images/faces/murumo.png"></p><p><input type="radio" name="face" value="murumo"></p></div>
+        <div class="entrance_face"><p class="entrance_face_img"><img src="./images/faces/papy.png"></p><p><input type="radio" name="face" value="papy"></p></div>
+        <div class="entrance_face"><p class="entrance_face_img"><img src="./images/faces/sasuke.png"></p><p><input type="radio" name="face" value="sasuke"></p></div>
+        <div class="entrance_face"><p class="entrance_face_img"><img src="./images/faces/hanzo.png"></p><p><input type="radio" name="face" value="hanzo"></p></div>
+        <div class="entrance_face"><p class="entrance_face_img"><img src="./images/faces/yamane.png"></p><p><input type="radio" name="face" value="yamane"></p></div>
+        <div class="entrance_face"><p class="entrance_face_img"><img src="./images/faces/akumi.png"></p><p><input type="radio" name="face" value="akumi"></p></div>
+        <div class="entrance_face"><p class="entrance_face_img"><img src="./images/faces/nezumi.png"></p><p><input type="radio" name="face" value="nezumi"></p></div>
+        <div class="entrance_face"><p class="entrance_face_img"><img src="./images/faces/aroma.png"></p><p><input type="radio" name="face" value="aroma"></p></div>
+        <div class="entrance_face"><p class="entrance_face_img"><img src="./images/faces/kameri.png"></p><p><input type="radio" name="face" value="kameri"></p></div>
+        <div class="entrance_face"><p class="entrance_face_img"><img src="./images/faces/kumomo.png"></p><p><input type="radio" name="face" value="kumomo"></p></div>
+        <div class="entrance_face"><p class="entrance_face_img"><img src="./images/faces/panta.png"></p><p><input type="radio" name="face" value="panta"></p></div>
+        <div class="entrance_face"><p class="entrance_face_img"><img src="./images/faces/manbo.png"></p><p><input type="radio" name="face" value="manbo"></p></div>
+        <div class="entrance_face"><p class="entrance_face_img"><img src="./images/faces/gabin.png"></p><p><input type="radio" name="face" value="gabin"></p></div>
+      </div>
+      <p>入室するチャットを下から選んでください。</p>
+      <p id="entrance_notice"></p>
+      <div id="rooms"></div>
+    </div>
+    </form>
+    <div id="footer">
+      <a href="/index.html">
+        <img src="/images/contents2015/back_on.png" alt="戻る" title="戻る">
+        <img src="/images/contents2015/back.png" alt="戻る" title="戻る">
+      </a>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+@charset "utf-8";
+   
+#kinenbi * {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+         -o-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+            box-sizing: border-box;
+
+	font-size: 14px;
+	-webkit-text-size-adjust: 100%;
+	font-family:
+        "ヒラギノ角ゴ Pro W3",
+        "Hiragino Kaku Gothic Pro",
+        "メイリオ",
+        Meiryo,
+        Osaka,
+        sans-serif,
+        "モトヤLマルベリ3等幅";
+	text-align: left;
+    margin: 0px;
+    padding: 0px;
+}
+
+#kinenbiHeader {
+	width: 300px;
+    height: 50px;
+    background-image: url("images/kinenbiHeader.png");
+    background-size: cover;
+}
+
+#kinenbiBody {
+	width: 300px;
+    background-image: url("images/kinenbiBody.png");
+    background-size: cover;
+}
+
+#kinenbiFooter #kinenbiFooterLeft {
+	width: 69px;
+    height: 109px;
+    background-image: url("images/kinenbiFooterLeft.png");
+    background-size: contain;
+    display: table-cell;
+}
+
+#kinenbiFooter #kinenbiFooterCenter {
+	width: 160px;
+    height: 109px;
+    background-image: url("images/kinenbiFooterCenter.png");
+    background-size: contain;
+    display: table-cell;
+}
+
+#kinenbiFooter #kinenbiFooterRight {
+	width: 71px;
+    height: 109px;
+    background-image: url("images/kinenbiFooterRight.png");
+    background-size: contain;
+    display: table-cell;
+}
+
+#kinenbiBody ul {
+    padding-left: 30px;
+    padding-right: 30px;
+    list-style-type: none;
+}
+
+#kinenbiBody ul li {
+    padding-bottom: 10px;
+    text-align: center;
+    color: #b5225b;
+    font-weight: bold;
+}
+
+#kinenbiFooterCenter {
+    padding-top: 40px;
+    padding-right: 10px;
+    text-align: right;
+}

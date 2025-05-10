@@ -1,0 +1,28 @@
+#twpanel {
+    max-width: 300px;
+    border-radius: 16px;
+    border: solid #40a0c0;
+}
+
+#twheader {
+    background-color: #BFF0FF;
+    border-radius: 16px 16px 0px 0px;
+    margin: 0px;
+    padding: 0px;
+    padding-left: 16px;
+    font-size: 14px;
+}
+
+#twpicture {
+    display: block;
+    max-width: 300px;
+}
+
+#twtext {
+    background-color: #fff5d6;
+    padding: 4px;
+    padding-bottom: 16px;
+    font-size: 14px;
+    border-radius: 0px 0px 16px 16px;
+    margin: 0px;
+}

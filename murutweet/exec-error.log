@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/Library/WebServer/Documents/murutweet/getTweet.py", line 63, in <module>
+    murl_orig = '%s:orig' % murl
+NameError: name 'murl' is not defined

@@ -1,0 +1,398 @@
+@charset "utf-8";
+   
+#vote * {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+         -o-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+            box-sizing: border-box;
+
+	font-size: 14px;
+	-webkit-text-size-adjust: 100%;
+	font-family:
+        "ヒラギノ角ゴ Pro W3",
+        "Hiragino Kaku Gothic Pro",
+        "メイリオ",
+        Meiryo,
+        Osaka,
+        sans-serif,
+        "モトヤLマルベリ3等幅";
+	text-align: left;
+}
+
+#vote p, #vote th, #vote td, #vote li {
+	margin-bottom: 20px;
+	margin-top: 20px;
+    color: #641900;
+}
+
+#vote textarea {
+    width: 100%;
+	font-size:120%;
+	padding:5px;
+    margin-bottom: 12px;
+    color: #35a63e;
+}
+    
+#vote textarea:focus {
+    background-color: #FEFCB4;
+    outline: none;
+    border: 1px solid #ff0000;
+}
+
+#vote input[type=text] {
+    width: 100%;
+	font-size:120%;
+	padding:5px;
+    margin-bottom: 12px;
+    color: #35a63e;
+}
+
+#vote input[type=text]:focus {
+    background-color: #FEFCB4;
+    outline: none;
+    border: 1px solid #ff0000;
+}
+
+#vote input[type=checkbox] {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+#vote input[type=radio] {
+	-webkit-transform: scale(2.0);
+	transform: scale(2.0);
+    vertical-align: middle;
+    margin-right: 12px;
+}
+
+#vote input[type=button] {
+    font-weight: bold;
+	font-size: 14px;
+	color: #000000;
+	padding: 8px 20px;
+    background: linear-gradient(
+		to bottom,
+		#ffffff 0%,
+		#e6dbc8 50%,
+		#d4c09f 50%,
+		#d4c09f 90%,
+		#3b2f1a);
+	background: -moz-linear-gradient(
+		top,
+		#ffffff 0%,
+		#e6dbc8 50%,
+		#d4c09f 50%,
+		#d4c09f 90%,
+		#3b2f1a);
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(#ffffff),
+		color-stop(0.50, #e6dbc8),
+		color-stop(0.50, #d4c09f),
+		color-stop(0.90, #d4c09f),
+		to(#3b2f1a));
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	border: 2px solid #000000;
+	-moz-box-shadow:
+		1px 1px 0px rgba(191,177,151,1),
+		inset 0px 0px 5px rgba(255,255,255,0.6);
+	-webkit-box-shadow:
+		1px 1px 0px rgba(191,177,151,1),
+		inset 0px 0px 5px rgba(255,255,255,0.6);
+	box-shadow:
+		1px 1px 0px rgba(191,177,151,1),
+		inset 0px 0px 5px rgba(255,255,255,0.6);
+	text-shadow:
+		0px 1px 0px rgba(255,255,255,1),
+		0px 1px 0px rgba(255,255,255,0.3);
+}
+
+#vote input[type=button]:hover {
+    padding: 8px 20px;
+    background-color: #ffb529;
+    background: linear-gradient(
+		to bottom,
+		#ffffff 0%,
+		#ffb529 50%,
+		#ea9800 50%,
+		#c78200 90%,
+		#603f00);
+	background: -moz-linear-gradient(
+		top,
+		#ffffff 0%,
+		#ffb529 50%,
+		#ea9800 50%,
+		#c78200 90%,
+		#603f00);
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(#ffffff),
+		color-stop(0.50, #ffb529),
+		color-stop(0.50, #ea9800),
+		color-stop(0.90, #c78200),
+		to(#603f00));
+    -webkit-box-shadow:inset 0px 0px 3px #fff;
+    -moz-box-shadow:inset 0px 0px 3px #fff;
+    box-shadow:inset 0px 0px 3px #fff;
+}
+
+#vote input[type=button]:active {
+	position: relative;
+    top: 1px;
+    background: linear-gradient(
+		to bottom,
+		#ffb529 0%,
+		#f0a619 50%,
+		#ea9800 50%,
+		#c78200 90%,
+		#603f00);
+	background: -moz-linear-gradient(
+		top,
+		#ffb529 0%,
+		#f0a619 50%,
+		#ea9800 50%,
+		#c78200 90%,
+		#603f00);
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(#ffb529),
+		color-stop(0.50, #f0a619),
+		color-stop(0.50, #ea9800),
+		color-stop(0.90, #c78200),
+		to(#603f00));
+	-webkit-box-shadow:
+		1px -2px 0px rgba(191,177,151,1),
+		inset 0px 0px 5px rgba(255,255,255,0.6);
+	-moz-box-shadow:
+		1px -2px 0px rgba(191,177,151,1),
+		inset 0px 0px 5px rgba(255,255,255,0.6);
+	box-shadow:
+		1px -2px 0px rgba(191,177,151,1),
+		inset 0px 0px 5px rgba(255,255,255,0.6);
+}
+
+#vote {
+	width: 300px;
+	border: 1px solid #ba5b30;
+    border-radius: 14px;
+    padding-bottom: 14px;
+    background-image: url("images/voteBack.png");
+    background-color: #ffffff;
+}
+
+#vote h1 {
+	display: block;
+	width: 100%;
+	margin: 0px;
+	padding: 2px;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    background-image: url("images/b2.png");
+	background-color: #f4e8cf;
+	font-size: 16px;
+    font-weight: bold;
+	color: #c35077;
+    
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+         -o-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+            box-sizing: border-box;
+
+	font-family:
+        "ヒラギノ角ゴ Pro W3",
+        "Hiragino Kaku Gothic Pro",
+        "メイリオ",
+        Meiryo,
+        Osaka,
+        sans-serif,
+        "モトヤLマルベリ3等幅";
+}
+
+.voteSubTitle {
+    color: #c35077;
+}
+
+#vote #voteTerm {
+    width: 100%;
+    padding-right: 4px;
+    text-align: right;
+	color: #c35077;
+}
+
+#vote #votePanel {
+	display: block;
+	width: 100%;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    overflow: auto;
+}
+
+#vote #notice {
+    display: block;
+    width: 100%;
+    border: 1px dashed;
+    border-color: #008837;
+    color: #008837;
+    background-color: rgba(201, 255, 253, 0.5);
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+/* 縦スクロールバー */
+#vote #votePanel::-webkit-scrollbar {
+	width: 12px;
+}
+#vote #votePanel::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+}
+#vote #votePanel::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+
+/* 横スクロールバー */
+#vote #votePanel::-webkit-scrollbar:horizontal {
+	width: 12px;
+}
+#vote #votePanel::-webkit-scrollbar-track:horizontal {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+}
+#vote #votePanel::-webkit-scrollbar-thumb:horizontal {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+#vote #votePanel::-webkit-scrollbar-corner{
+	background: transparent;
+}
+
+#vote #voteButtonArea {
+	width: 100%;
+    text-align: center;
+}
+
+#vote ol {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+#vote li {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #641900;
+}
+
+#vote ol li ul {
+    list-style-type: disc;
+    margin: 0px;
+    padding: 0px;
+}
+
+#vote ol li ul li {
+    list-style-type: disc;
+    margin-left: 20px;
+    padding-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #641900;
+}
+
+.voteSpinner {
+   position: relative !important;
+}
+
+.graph {
+    position: relative; /* IE is dumb */
+    width: 100%;
+    border: 1px solid #207870;
+    padding: 0px;
+}
+    
+.graph .bar1 {
+    display: block;
+    position: relative;
+    background-image: url("images/a17.png");
+    background-color: #ff0000;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 0px 1px 1px #000000;
+    height: 16px;
+    line-height: 16px;
+    white-space: nowrap;
+}
+.graph .bar2 {
+    display: block;
+    position: relative;
+    background-image: url("images/a10.png");
+    background-color: #0000ff;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 0px 1px 1px #000000;
+    height: 16px;
+    line-height: 16px;
+    white-space: nowrap;
+}
+.graph .bar3 {
+    display: block;
+    position: relative;
+    background-image: url("images/a2.png");
+    background-color: #ffff00;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 0px 1px 1px #000000;
+    height: 16px;
+    line-height: 16px;
+    white-space: nowrap;
+}
+.graph .bar4 {
+    display: block;
+    position: relative;
+    background-image: url("images/a6.png");
+    background-color: #00ff00;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 0px 1px 1px #000000;
+    height: 16px;
+    line-height: 16px;
+    white-space: nowrap;
+}
+.graph .bar5 {
+    display: block;
+    position: relative;
+    background-image: url("images/a14.png");
+    background-color: #ff00ff;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 0px 1px 1px #000000;
+    height: 16px;
+    line-height: 16px;
+    white-space: nowrap;
+}
+.graph .bar6 {
+    display: block;
+    position: relative;
+    background-image: url("images/a1.png");
+    background-color: #ff8000;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 0px 1px 1px #000000;
+    height: 16px;
+    line-height: 16px;
+    white-space: nowrap;
+}
+.graph .bar1 span { position: absolute; left: 16px; }
+.graph .bar2 span { position: absolute; left: 16px; }
+.graph .bar3 span { position: absolute; left: 16px; }
+.graph .bar4 span { position: absolute; left: 16px; }
+.graph .bar5 span { position: absolute; left: 16px; }
+.graph .bar6 span { position: absolute; left: 16px; }
+

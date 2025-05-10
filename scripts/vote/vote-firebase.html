@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>投票のテスト</title>
+        <link rel="icon" type="image/GIF" href="/favicon.ico"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+        <meta http-equiv="Pragma" content="no-cache">
+
+        <!--<link href="./base.css" rel="stylesheet" type="text/css">-->
+        <link href="./vote.css" rel="stylesheet" type="text/css">
+
+        <script type="text/javascript" src="/import/lib/jquery-1.11.2.min.js"></script>
+        <script type="text/javascript" src="/import/lib/moment.min.js"></script>
+        <script type="text/javascript" src="/import/lib/spin.min.js"></script>
+        <script type="text/javascript" src="./vote-firebase.js"></script>
+        <script type="text/javascript">
+            $(function() {
+                initVote(28);
+            });
+        </script>
+    </head>
+
+    <body style="padding:0; margin: 0;">
+
+        <!-- 投票 -->
+        <div id="vote" />
+
+    </body>
+</html>

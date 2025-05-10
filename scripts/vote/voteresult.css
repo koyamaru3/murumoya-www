@@ -1,0 +1,77 @@
+@charset "utf-8";
+
+#voteResult * {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+         -o-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+            box-sizing: border-box;
+
+	font-size: 14px;
+	-webkit-text-size-adjust: 100%;
+	font-family:
+        "ヒラギノ角ゴ Pro W3",
+        "Hiragino Kaku Gothic Pro",
+        "メイリオ",
+        Meiryo,
+        Osaka,
+        sans-serif,
+        "モトヤLマルベリ3等幅";
+	text-align: left;
+    
+    margin: 0px;
+    padding: 0px;
+}
+
+#voteResultHeader {
+	width: 300px;
+    height: 57px;
+    background-image: url("/vote/images/voteResultHeader.png");
+    background-size: cover;
+}
+
+#voteResultBody {
+	width: 300px;
+    margin: 0px;
+    background-image: url("/vote/images/voteResultBody.png");
+    background-size: contain;
+}
+
+#voteResultFooter {
+	width: 300px;
+    height: 95px;
+    background-image: url("/vote/images/voteResultFooter.png");
+    background-size: cover;
+}
+
+#voteResult a {
+	color: #ffffff;
+    text-decoration: none;
+}
+
+#voteResult a:link {
+	color: #ffffff;
+}
+
+#voteResult a:hover {
+	color: #ffff00;
+    background-color: transparent;
+}
+
+#voteResultBody ul li {
+    display: block;
+    width: 260px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 10px;
+}
+
+#voteResultFooter p {
+    display: block;
+    padding-top: 64px;
+    margin-left: 16px;
+}
+
+.voteResultSpinner {
+   position: relative !important;
+}

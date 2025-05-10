@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="icon" type="image/gif" href="/favicon.ico"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<meta http-equiv="Pragma" content="no-cache">
+<title>ムルモ屋本舗：みんなの小説</title>
+<script type="text/javascript" src="/import/lib/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="/scripts/novel/slidemove.js"></script>
+<link href="/import/contents2015.css" rel="stylesheet" type="text/css">
+<link href="/scripts/novel/novel.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="/import/common2015.js"></script>
+<script type="text/javascript" src="/scripts/novel/novel-firebase.js"></script>
+<script type="text/javascript">
+$(function() {
+    params = getQueryString();
+    getFairyContent(params.author, params.fairy);
+});
+</script>
+
+<style type="text/css">
+<!--
+.picture {
+    display: block;
+    max-width: 400px;
+    overflow: hidden;
+}
+.picture img {
+    width: 100%;
+}
+</style>
+
+
+</head>
+
+<body id="index">
+<div id="container">
+
+<div id="header">
+<div id="toTop"><a class="image" href="/index.html"><img src="/images/contents2015/toTop.png" alt="トップページへ" class="rollover" title="トップページへ"></a></div>
+<div class="picture"><img src="images/novelTitle2.png"></div>
+</div><!--header-->
+<br>
+
+<!--
+<div class="rightButtonPanel">
+<a class="novelButton">編集する</a>
+</div>--><!--rightButtonPanel-->
+
+<div id="novelBody">
+</div><!--novelBody-->
+<br>
+
+<div id="footer"><a class="image" href="top.html"><img src="/images/contents2015/back.png" alt="戻る" class="rollover" title="戻る"></a></div>
+
+
+</div><!--container-->
+</body>
+</html>

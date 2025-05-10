@@ -1,0 +1,91 @@
+@charset "utf-8";
+
+#article * {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+         -o-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+            box-sizing: border-box;
+
+	font-size: 14px;
+	-webkit-text-size-adjust: 100%;
+	font-family:
+        "ヒラギノ角ゴ Pro W3",
+        "Hiragino Kaku Gothic Pro",
+        "メイリオ",
+        Meiryo,
+        Osaka,
+        sans-serif,
+        "モトヤLマルベリ3等幅";
+	text-align: left;
+    
+    margin: 0px;
+    padding: 0px;
+}
+
+#articleHeader {
+	width: 300px;
+    height: 122px;
+    background-image: url("./images/articleHeader.png");
+    background-size: 300px 122px;
+    background-size: cover;
+}
+
+#articleBody {
+	width: 300px;
+    margin: 0px;
+    background-image: url("./images/articleBody.png");
+    background-size: 300px 71px;
+    background-size: contain;
+}
+
+#articleFooter {
+	width: 300px;
+    height: 60px;
+    background-image: url("./images/articleFooter.png");
+    background-size: 300px 60px;
+    background-size: cover;
+}
+
+#articleBody ul li {
+    display: block;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 260px;
+    padding-top: 16px;
+}
+
+#articleBody ul li:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+#articleBody ul li img.tate {
+    width: 53px;
+    box-shadow: 1px 1px 10px 2px rgba(111, 32, 32, 0.5);
+    float: left;
+    margin-right: 10px;
+}
+
+#articleBody ul li img.yoko {
+    width: 80px;
+    box-shadow: 1px 1px 10px 2px rgba(111, 32, 32, 0.5);
+    float: left;
+    margin-right: 10px;
+}
+
+#articleBody ul li a img:hover {
+    top: -2px;
+    position: relative;
+}
+
+#articleFooter #more {
+    display: block;
+    padding-top: 24px;
+    margin-left: 10px;
+}
+
+.articleSpinner {
+   position: relative !important;
+}

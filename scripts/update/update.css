@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+#update * {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+         -o-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+            box-sizing: border-box;
+
+	font-size: 14px;
+	-webkit-text-size-adjust: 100%;
+	font-family:
+        "ヒラギノ角ゴ Pro W3",
+        "Hiragino Kaku Gothic Pro",
+        "メイリオ",
+        Meiryo,
+        Osaka,
+        sans-serif,
+        "モトヤLマルベリ3等幅";
+	text-align: left;
+}
+
+#updateHeader {
+	width: 300px;
+    height: 94px;
+    background-image: url("./images/updateHeader.png");
+    background-size: 300px 94px;
+}
+
+#updateBody {
+	width: 300px;
+    padding-left: 16px;
+    background-image: url("./images/updateBody.png");
+    background-size: 300px 23px;
+}
+
+#updateFooter {
+	width: 300px;
+    height: 30px;
+    background-image: url("./images/updateFooter.png");
+    background-size: 300px 30px;
+}
+
+#updateMessage {
+    border: 0px;
+    width: 254px;
+    color: #c4334f;
+    background: #fff2ca;
+}
+
+.updateSpinner {
+   position: relative !important;
+}
