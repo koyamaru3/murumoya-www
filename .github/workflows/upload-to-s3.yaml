@@ -26,6 +26,6 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-s3-sync-
       
-      - name: Upload to S3
+      - name: S3と同期する
         run: |
           aws s3 sync --exact-timestamps --exclude '.git/*' --exclude '.github/*' . s3://www3.murumoya.com/ --delete
