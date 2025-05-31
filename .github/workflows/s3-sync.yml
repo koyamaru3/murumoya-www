@@ -25,7 +25,10 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ap-northeast-1  # 東京リージョン（変更可）
 
-      - name: S3に同期
+      - name: S3に同期、CloudFrontのキャッシュクリア
         run: |
-          ls -la
+          aws s3 sync --exclude '.git*' . s3://www3.murumoya.com --dryrun --delete > .github/update.log
+          echo "■アップロードするファイル"
+          cat .github/update.log
           aws s3 sync --exclude '.git*' . s3://www3.murumoya.com --exact-timestamps --delete
+          aws cloudfront create-invalidation --distribution-id EZD24GW63GZSP --paths $(awk '$2=="upload:" {print $3}' .github/update.log | xargs)
