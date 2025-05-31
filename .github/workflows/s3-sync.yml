@@ -1,0 +1,31 @@
+name: S3 Sync
+
+on:
+  push:
+    branches:
+      - main  # 対象のブランチを指定
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: リポジトリをチェックアウト
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      
+      - name: ファイルのタイムスタンプを復元
+        uses: chetan/git-restore-mtime-action@v2
+
+      - name: AWS CLIをセットアップ
+        uses: aws-actions/configure-aws-credentials@v3
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ap-northeast-1  # 東京リージョン（変更可）
+
+      - name: S3に同期
+        run: |
+          ls -la
+          aws s3 sync --exclude '.git*' . s3://testsite.murumoya.com --exact-timestamps --delete
