@@ -28,4 +28,4 @@ jobs:
       - name: S3に同期
         run: |
           ls -la
-          aws s3 sync --exclude '.git*' . s3://testsite.murumoya.com --exact-timestamps --delete
+          aws s3 sync --exclude '.git*' . s3://www3.murumoya.com --exact-timestamps --delete
