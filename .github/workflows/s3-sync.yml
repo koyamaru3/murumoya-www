@@ -32,4 +32,5 @@ jobs:
           echo "■アップロードするファイル"
           cat .github/upload_file.log
           aws s3 sync --exclude '.git*' . s3://www3.murumoya.com --exact-timestamps --delete
-          aws cloudfront create-invalidation --distribution-id EZD24GW63GZSP --paths $(cat .github/upload_file.log | sed 's/^/\//g' | xargs)
+          aws cloudfront create-invalidation --distribution-id EZD24GW63GZSP --paths $(cat .github/upload_file.log | sed -E 's|^\./|/|;s|^[^/]|/&|' | xargs)
+          # 上記のsedは、先頭が./の場合、/に置換、先頭が/以外の文字の場合、/を追加 を表す
