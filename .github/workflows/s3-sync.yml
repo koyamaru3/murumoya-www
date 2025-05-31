@@ -28,7 +28,8 @@ jobs:
       - name: S3に同期、CloudFrontのキャッシュクリア
         run: |
           aws s3 sync --exclude '.git*' . s3://www3.murumoya.com --dryrun --delete > .github/update.log
+          awk '$2=="upload:" {print $3}' .github/update.log > .github/upload_file.log
           echo "■アップロードするファイル"
-          cat .github/update.log
+          cat .github/upload_file.log
           aws s3 sync --exclude '.git*' . s3://www3.murumoya.com --exact-timestamps --delete
-          aws cloudfront create-invalidation --distribution-id EZD24GW63GZSP --paths $(awk '$2=="upload:" {print $3}' .github/update.log | xargs)
+          aws cloudfront create-invalidation --distribution-id EZD24GW63GZSP --paths $(cat .github/upload_file.log | xargs)
