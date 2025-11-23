@@ -3,7 +3,7 @@ function initNews() {
   const items = [
     {date: "2026年2月13日", content: "ミルモでポン！ SPINNS限定コラボアイテム", link: "https://www.spinns.jp/c/collabo/mirumodepon"},
     {date: "2025年12月19日", content: "『コロちゃお』ミルモコラボデザインのたまごっち", link: "https://www.corocoro.jp/special/13"},
-    {date: "2025年11月21日", content: "ミルモでポン！ つまんでつなげてますこっと", link: "https://gashapon.jp/products/detail.php?jan_code=4582769892172000"},
+    {date: "2025年11月第４週", content: "ミルモでポン！ つまんでつなげてますこっと", link: "https://gashapon.jp/products/detail.php?jan_code=4582769892172000"},
     {date: "2025年11月中旬", content: "ミルモでポン！ マスコットぬいぐるみ～聖歌隊～", link: "https://www.fancy-fukuya.co.jp/topics/202511mirumodepon/"},
 //    {date: "2025年10月31日", content: "ちゃお12月豪 ふろくにミルモのシール", link: "https://ciao.shogakukan.co.jp/topics/194308/"},
 //    {date: "2025年9月末", content: "ミルモでポン！ 100円ショップグッズ", link: ""},
