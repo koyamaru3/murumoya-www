@@ -82,6 +82,30 @@ div {
   max-width: 660px;
 }
 
+.notice_panel {
+  display: flex;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  padding-left: 8px;
+  padding: 20px;
+  background-color: #fff;
+  border: 3px solid #ffadbd;
+  border-radius: 20px;
+}
+
+.notice_picture img {
+  display: block;
+  max-width: 200px;
+}
+
+.notice_picture img {
+  width: 100%;
+}
+.notice_panel ul {
+  margin-left: 60px;
+  text-align: left;
+}
+
 .entrance_panel {
   margin-top: 32px;
   margin-bottom: 32px;
