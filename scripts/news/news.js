@@ -1,7 +1,6 @@
 // 初期起動時の呼び出し
 function initNews() {
   const items = [
-    {date: "2026年3月", content: "ミルモでポン！ 平成レトログッズ", link: "https://collabo-cafe.com/events/collabo/mirumo-tile-seal-retro-tcp-anime-store-goods2025/"},
     {date: "2026年2月13日", content: "ミルモでポン！ SPINNS限定コラボアイテム", link: "https://www.spinns.jp/c/collabo/mirumodepon"},
     {date: "2026年1月30日", content: "ミルモでポン！×WEGOコラボアイテム", link: "https://wego.jp/blogs/news/chao-collabo?utm_source=X_press&utm_medium=post"},
 //    {date: "2025年12月中旬", content: "ミルモでポン！ ぬいぐるみがま口ポーチ", link: "https://www.fancy-fukuya.co.jp/topics/202512mirumodepon02/"},
