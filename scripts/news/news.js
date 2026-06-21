@@ -1,9 +1,10 @@
 // 初期起動時の呼び出し
 function initNews() {
   const items = [
+    {date: "2026年6月26日", content: "ミルモでポン！ キラキラシールブック", link: "https://www.shogakukan.co.jp/books/09735631"},
     {date: "2026年5月29日", content: "まるくじ『ミルモでポン！』【おやすみたいむ】", link: "https://marukuji.jp/detail/333"},
     {date: "2026年5月1日", content: "ミルモでポン！ 阪神タイガースのコラボグッズ", link: "https://natalie.mu/comic/news/668840"},
-    {date: "2026年2月13日", content: "ミルモでポン！ SPINNS限定コラボアイテム", link: "https://www.spinns.jp/c/collabo/mirumodepon"},
+ //   {date: "2026年2月13日", content: "ミルモでポン！ SPINNS限定コラボアイテム", link: "https://www.spinns.jp/c/collabo/mirumodepon"},
 //    {date: "2026年1月30日", content: "ミルモでポン！×WEGOコラボアイテム", link: "https://wego.jp/blogs/news/chao-collabo?utm_source=X_press&utm_medium=post"},
 //    {date: "2025年12月中旬", content: "ミルモでポン！ ぬいぐるみがま口ポーチ", link: "https://www.fancy-fukuya.co.jp/topics/202512mirumodepon02/"},
 //    {date: "2025年12月中旬", content: "ミルモでポン！ ミニボストンバッグ", link: "https://www.fancy-fukuya.co.jp/topics/202512mirumodepon/"},
