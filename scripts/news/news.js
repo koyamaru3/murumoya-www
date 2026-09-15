@@ -1,9 +1,11 @@
 // 初期起動時の呼び出し
 function initNews() {
   const items = [
+    {date: "2026年9月25日", content: "書店限定グッズ　ミルモで本！屋さん シリーズ", link: "https://marimocraft.co.jp/event/mdp0925/"},
+    {date: "2026年9月25日", content: "ミルモでポン！愛蔵版1巻", link: ""},
     {date: "2026年9月25日", content: "ミルモでポン！にゅ〜 コミックス１巻", link: ""},
     {date: "2026年9月中旬", content: "サンキューマート ミルモでポン！コラボ雑貨", link: "https://thankyoumart.jp/blogs/news/mirumo_de_pon?srsltid=AfmBOoopl__4qKpakCPTvAVf8K_m-ZzrYLhH2PcUUp98H69iJM5iVVnQ"},
-    {date: "2026年7月15日", content: "CanCamナイトプール×『ミルモでポン！』", link: "https://cancam.jp/archives/1749597"},
+//    {date: "2026年7月15日", content: "CanCamナイトプール×『ミルモでポン！』", link: "https://cancam.jp/archives/1749597"},
 //    {date: "2026年7月中旬", content: "ミルモでポン！ サガラ刺繍シール", link: "https://x.com/friendcharacter/status/2074055754139541652"},
 //    {date: "2026年6月26日", content: "ミルモでポン！ キラキラシールブック", link: "https://www.shogakukan.co.jp/books/09735631"},
 //    {date: "2026年5月29日", content: "まるくじ『ミルモでポン！』【おやすみたいむ】", link: "https://marukuji.jp/detail/333"},
