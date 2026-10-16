@@ -1,10 +1,18 @@
 // 初期起動時の呼び出し
 function initNews() {
   const items = [
-    {date: "2026年9月25日", content: "書店限定グッズ　ミルモで本！屋さん シリーズ", link: "https://marimocraft.co.jp/event/mdp0925/"},
-    {date: "2026年9月25日", content: "ミルモでポン！愛蔵版1巻", link: ""},
-    {date: "2026年9月25日", content: "ミルモでポン！にゅ〜 コミックス１巻", link: ""},
-    {date: "2026年9月中旬", content: "サンキューマート ミルモでポン！コラボ雑貨", link: "https://thankyoumart.jp/blogs/news/mirumo_de_pon?srsltid=AfmBOoopl__4qKpakCPTvAVf8K_m-ZzrYLhH2PcUUp98H69iJM5iVVnQ"},
+    {date: "2027年1月", content: "ミルモでポン！フィンガーパペット", link: "https://tokyo-yumeya.co.jp/goods/mirumodeponyubiningyou/"},
+    {date: "2026年12月", content: "ミルモでポン！ぬいぐるみスマホチャーム", link: "https://tokyo-yumeya.co.jp/goods/mirumodeponsmahocharm/"},
+    {date: "2026年11月", content: "ミルモでポン！ぬいぐるみボールチェーン", link: "https://tokyo-yumeya.co.jp/goods/mirumodeponnuiballchain/"},
+    {date: "2026年10月31日", content: "ミルモでポン！ぺたもりしーるリフィル", link: "https://www.bandai.co.jp/catalog/item.php?jan_cd=4582770083330000"},
+    {date: "2026年10月", content: "ミルモでポン！ぬいぐるみポーチ", link: "https://tokyo-yumeya.co.jp/goods/mirumodeponnuipouch/"},
+    {date: "2026年10月26日", content: "ミルモでポン！愛蔵版3巻", link: ""},
+    {date: "2026年10月26日", content: "ミルモでポン！愛蔵版2巻", link: ""},
+    {date: "2026年10月17日", content: "ミルモでポン！しまむらとのコラボアイテム", link: "https://x.com/shimamura_gr/status/2110974023597195280"},
+//    {date: "2026年9月25日", content: "書店限定グッズ　ミルモで本！屋さん シリーズ", link: "https://marimocraft.co.jp/event/mdp0925/"},
+//    {date: "2026年9月25日", content: "ミルモでポン！愛蔵版1巻", link: "https://www.shogakukan.co.jp/books/09873610"},
+//    {date: "2026年9月25日", content: "ミルモでポン！にゅ〜 コミックス１巻", link: "https://www.shogakukan.co.jp/books/09873611"},
+//    {date: "2026年9月中旬", content: "サンキューマート ミルモでポン！コラボ雑貨", link: "https://thankyoumart.jp/blogs/news/mirumo_de_pon?srsltid=AfmBOoopl__4qKpakCPTvAVf8K_m-ZzrYLhH2PcUUp98H69iJM5iVVnQ"},
 //    {date: "2026年7月15日", content: "CanCamナイトプール×『ミルモでポン！』", link: "https://cancam.jp/archives/1749597"},
 //    {date: "2026年7月中旬", content: "ミルモでポン！ サガラ刺繍シール", link: "https://x.com/friendcharacter/status/2074055754139541652"},
 //    {date: "2026年6月26日", content: "ミルモでポン！ キラキラシールブック", link: "https://www.shogakukan.co.jp/books/09735631"},
